@@ -1,0 +1,39 @@
+Arbre de Décision :
+    Principes de base :
+    Un arbre de décision est un modèle d'apprentissage automatique qui prend des décisions en formulant une série de questions sur les caractéristiques des données. 
+    Chaque nœud dans l'arbre représente une question sur une caractéristique, et chaque branche sortante de ce nœud est une réponse possible à la question. 
+    Les feuilles de l'arbre contiennent les prédictions.
+
+    Processus :
+    1) Séparation des données : L'algorithme détermine la caractéristique qui sépare au mieux les données en sous-groupes homogènes.
+    2) Création des nœuds : Les questions sont posées sur les caractéristiques pour créer des nœuds dans l'arbre, divisant ainsi les données à chaque étape.
+    3) Critère de division : L'algorithme utilise un critère (comme l'indice de Gini ou l'entropie) pour mesurer la pureté des groupes résultants après chaque division.
+    4) Répétition : Le processus est répété récursivement jusqu'à ce que les données soient suffisamment segmentées ou qu'un critère d'arrêt soit atteint.
+    5) Prédiction : Lorsqu'une nouvelle donnée arrive, elle traverse l'arbre en répondant aux questions pour atteindre une feuille, où la prédiction est faite.
+
+Forêt Aléatoire :
+    Principes de base :
+    Une forêt aléatoire est un ensemble (ensemble) d'arbres de décision, où chaque arbre est formé sur un sous-ensemble aléatoire des données d'entraînement et utilise une sélection aléatoire de caractéristiques à chaque nœud de décision.
+
+    Processus :
+    1) Création des arbres : Plusieurs arbres de décision sont construits avec des sous-ensembles aléatoires des données d'entraînement.
+    2) Variation des caractéristiques : À chaque nœud de décision, un sous-ensemble aléatoire des caractéristiques est considéré, ce qui rend chaque arbre unique.
+    3) Vote majoritaire : Lors de la prédiction, chaque arbre donne une prédiction, et la forêt choisit la prédiction la plus fréquente comme résultat final.
+    4) Réduction de surajustement : En combinant les prédictions de plusieurs arbres, la forêt aléatoire a tendance à être plus robuste et à réduire le surajustement par rapport à un seul arbre de décision.
+
+Machine à Vecteur de Support (SVM):
+    Fonctionnement :
+    Les SVM sont utilisées pour la classification et la régression. Voici comment elles fonctionnent :
+        Séparation linéaire : Pour la classification, l'algorithme cherche à trouver un hyperplan qui sépare au mieux les classes dans l'espace des caractéristiques.
+        Marges : L'objectif est de maximiser les marges entre les points de données et l'hyperplan, permettant une meilleure généralisation.
+        Vecteurs de Support : Ce sont les points de données qui définissent les marges. Les SVM tirent leur nom de ces vecteurs, car ce sont eux qui sont essentiels pour définir la séparation optimale.
+        Noyau (Kernel) : Les SVM peuvent utiliser des noyaux pour gérer des problèmes non linéaires en projetant les données dans un espace de dimension supérieure où une séparation linéaire est possible.
+        Régression : Pour la régression, l'objectif est de minimiser les erreurs tout en maintenant une certaine tolérance autour des points de données.
+    Les SVM sont puissantes pour les données non linéaires et dans des espaces de grande dimension.
+
+
+
+Conclusion :
+    En résumé, un arbre de décision prend des décisions en posant des questions sur les caractéristiques des données, tandis qu'une forêt aléatoire 
+    est une collection d'arbres de décision construits sur des sous-ensembles aléatoires des données, offrant ainsi une prédiction plus robuste. 
+    Ces algorithmes sont largement utilisés pour la classification et la régression dans le domaine de l'apprentissage automatique.
